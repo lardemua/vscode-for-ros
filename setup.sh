@@ -1,4 +1,11 @@
 
+cat <<EOF
+ _  _  ____   ___  __  ____  ____    ____   __   ____ 
+/ )( \/ ___) / __)/  \(    \(  __)  (  _ \ /  \ / ___)
+\ \/ /\___ \( (__(  O )) D ( ) _)    )   /(  O )\___ \ 
+ \__/ (____/ \___)\__/(____/(____)  (__\_) \__/ (____/
+EOF
+
 echo "Installing basic dependencies"
 sudo apt install clang clang-format clang-tidy -y
 
@@ -41,3 +48,5 @@ cat > ~/.config/Code/User/settings.json <<EOF
     "editor.formatOnSave": true
 }
 EOF
+
+echo "Done configuring"
