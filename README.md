@@ -5,5 +5,5 @@
 ## Install vscode
 
 ```
-`wget -qO- https://git.io/vAPG4 | bash`
+wget -qO- https://git.io/vAPG4 | bash
 ```

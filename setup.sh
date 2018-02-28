@@ -9,7 +9,7 @@ EOF
 echo "Installing basic dependencies"
 sudo apt install clang clang-format clang-tidy -y
 
-if ! [[-e `which code`]]
+if ! [[ -e `which code` ]]
 then
     echo "Installing vscode"
     curl -o code.deb -L 'https://go.microsoft.com/fwlink/?LinkID=760868'
@@ -29,7 +29,6 @@ extensions=(
     "vector-of-bool.cmake-tools"
     "ajshort.ros"
     "DotJoshJohnson.xml"
-    "webfreak.debug"
     "mitaki28.vscode-clang"
 )
 
@@ -56,7 +55,8 @@ cat > ~/.config/Code/User/settings.json <<EOF
     "editor.formatOnSave": true,
     "clang.diagnostic.enable": false,
     "C_Cpp.intelliSenseEngine": "Tag Parser",
-    "ros.distro": "kinetic"
+    "ros.distro": "kinetic",
+    "editor.wordWrap": "on"
 }
 EOF
 
