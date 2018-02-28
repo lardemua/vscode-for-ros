@@ -9,11 +9,16 @@ EOF
 echo "Installing basic dependencies"
 sudo apt install clang clang-format clang-tidy -y
 
-echo "Installing vscode"
-curl -o code.deb -L 'https://go.microsoft.com/fwlink/?LinkID=760868'
-sudo apt install ./code.deb -y
-rm code.deb
-sudo apt install 
+if ! [[-e `which code`]]
+then
+    echo "Installing vscode"
+    curl -o code.deb -L 'https://go.microsoft.com/fwlink/?LinkID=760868'
+    sudo apt install ./code.deb -y
+    rm code.deb
+    sudo apt install 
+else
+    echo "yay!!! You already have code installed!"
+fi
 
 echo "Installing vscode extensions"
 
@@ -48,8 +53,11 @@ cat > ~/.config/Code/User/settings.json <<EOF
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "clang.diagnostic.enable": false,
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "ros.distro": "kinetic"
 }
 EOF
 
-echo "Done configuring"
+echo "Done configuring!"

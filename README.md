@@ -1,5 +1,9 @@
 # vscode-for-ros
 
-## Install everything
+# Setup
 
+## Install vscode
+
+```
 `wget -qO- https://git.io/vAPG4 | bash`
+```
