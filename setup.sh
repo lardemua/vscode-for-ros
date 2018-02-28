@@ -9,15 +9,14 @@ EOF
 echo "Installing basic dependencies"
 sudo apt install clang clang-format clang-tidy -y
 
-if ! [[ -e `which code` ]]
+if [[ -e `which code` ]]
 then
+    echo "yay!!! You already have code installed!"
+else
     echo "Installing vscode"
     curl -o code.deb -L 'https://go.microsoft.com/fwlink/?LinkID=760868'
     sudo apt install ./code.deb -y
     rm code.deb
-    sudo apt install 
-else
-    echo "yay!!! You already have code installed!"
 fi
 
 echo "Installing vscode extensions"
