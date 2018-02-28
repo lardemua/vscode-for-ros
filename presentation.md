@@ -2,19 +2,17 @@
 title: vscode for ROS
 author: UA
 date: Ma 2018
-theme: beige
-revealjs-url: http://lab.hakim.se/reveal-js
+theme: white
+revealjs-url: revealjs
 ---
 
-# Code
+# Setup
 
-```python
-def x(y):
-    return y
+## Install *
+
+```
+`wget -qO- https://git.io/vAPG4 | bash`
 ```
 
-# Something
+## Get the tutorial
 
-- Why
-- How
-- Who

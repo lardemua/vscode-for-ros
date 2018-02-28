@@ -24,6 +24,8 @@ extensions=(
     "vector-of-bool.cmake-tools"
     "ajshort.ros"
     "DotJoshJohnson.xml"
+    "webfreak.debug"
+    "mitaki28.vscode-clang"
 )
 
 for extension in ${extensions[*]}
