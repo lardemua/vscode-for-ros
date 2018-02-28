@@ -1,1 +1,1 @@
-pandoc -t revealjs -s -o index.html presentation.md
+pandoc -t revealjs -s --self-contained -o presentation.html presentation.md
