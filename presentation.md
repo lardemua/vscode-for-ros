@@ -14,5 +14,10 @@ revealjs-url: revealjs
 `wget -qO- https://git.io/vAPG4 | bash`
 ```
 
-## Get the tutorial
+## Tutorial
+
+```
+wget -qO- https://git.io/vAXaY | tar zxf -
+code tutorial
+```
 
