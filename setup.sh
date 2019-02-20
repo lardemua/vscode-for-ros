@@ -53,9 +53,10 @@ cat > ~/.config/Code/User/settings.json <<EOF
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "clang.diagnostic.enable": false,
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
-    "ros.distro": "kinetic",
-    "editor.wordWrap": "on"
+    "ros.distro": "melodic",
+    "editor.wordWrap": "on",
+    "breadcrumbs.enabled": true,
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format"
 }
 EOF
 
